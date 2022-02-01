@@ -4,31 +4,127 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Our Menu</title>
-    <!link rel="stylesheet" href="CSS/styles.css">
+    /* <!link rel="stylesheet" href="CSS/styles.css"> */
     <style>
+      /* Header 1 style */
       h1 {
         font-family: "Comic Sans MS", "Comic Sans", cursive;
         text-align: center;
+        padding: 3%;
       }
+
+      /* Paragraph style */
       p {
-        border: 1px solid black;
-        background-color: #A52A2A;
+        border: 5px solid black;
         width: 90%;
-        height: 150px;
+        height: 180px;
+        padding-top: 7%;
         margin-right: auto;
         margin-left: auto;
         font-family: Helvetica;
-        color: white;
+        }
+    
+      /* Box sizing */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      #box1 {
+        background-color: #ffe9d1;
+        padding: .5%;
+        border: 5px solid black;
+        width: 7%;
+        box-sizing: border-box;
+        height: 11%;
+        position: absolute;
+        left: 24.6%;
+      }
+      
+      #content{
+        font-family: Helvetica;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      #bottom{
+        position:absolute;
+        bottom:0;
+        left:0;
+      }
+
+      /* Row style */
+      .row {
+        width: 100%;
+      }
+
+      /* Large device style*/
+       @media (min-width: 992px) {
+        .col-lg-1, .col-lg-2, .col-lg-3 {
+          float: left;
+        }
+        .col-lg-1 {
+          width: 33.33%;
+        }
+        .col-lg-2 {
+          width: 33.33%;
+        }
+        .col-lg-3 {
+          width: 33.33%;
+        }
+      }
+
+      /* Medium device style*/
+      @media (min-width: 768px) and (max-width: 991px) {
+        .col-md-1, .col-md-2, .col-md-3 {
+          float: left; 
+        }
+        .col-md-1 {
+          width: 33.33%;
+        }
+        .col-md-2 {
+          width: 33.33%;
+        }
+        .col-md-3 {
+          width: 33.33%;
+        }
+      }
+
+      /* Small device style*/
+      @media (max-width: 767px) {
+        .col-sm-1, .col-sm-2, .col-sm-3 {
+          float: left;
+        }
+        .col-sm-1 {
+          width: 33.33%;
+        }
+        .col-sm-2 {
+          width: 33.33%;
+        }
+        .col-sm-3 {
+          width: 33.33%;
+        }
       }
     </style>
   </head>
 <body>
-  <h1>Our Menu Test</h1>
+  <h1>Our Menu</h1>
 
-  <div class="row">
-  <div class="col-lg-3 col-md-3"><p>Item 1</p></div>
-  <div class="col-lg-3 col-md-3"><p>Item 2</p></div>
-  <div class="col-lg-3 col-md-3"><p>Item 3</p></div>
+<div class="row">
+  <div class="col-lg-3 col-md-3 col-sm-3"><div id="box1">
+    <div id="content">Chicken</div></div>
+    <div><p>Freedom Food chicken in an Indian inspired fresh tomato based curry with whole spices, curry leaves, sweet smokey paprika and garan masala. Freedom Food chicken in an Indian inspired fresh tomato based curry with whole spices, curry leaves, sweet smokey paprika and garan masala. Freedom Food chicken in an Indian inspired fresh tomato based curry with whole spices, curry leaves, sweet smokey paprika and garan masala.</p>
+  </div>
+  </div>
+    <div class="col-lg-3 col-md-3 col-sm-3"><div id="box1">
+    <div id="content">Beef</div></div>
+    <div><p>Dry aged Porterhouse Steak bordelaise, beamaise, with choice of two contomi available on four cource dibber prix fixe menu. Dry aged Porterhouse Steak bordelaise, beamaise, with choice of two contomi available on four cource dibber prix fixe menu. Dry aged Porterhouse Steak bordelaise, beamaise, with choice of two contomi available on four cource dibber prix fixe menu.</p></div>
+      </div>
+    <div class="col-lg-3 col-md-3 col-sm-3"><div id="box1">
+    <div id="content">Sushi</div></div>
+    <div><p>Assorted Sushi, California Rolls, Beef Gyoza and green salad. Assorted Sushi, California Rolls, Beef Gyoza and green salad. Assorted Sushi, California Rolls, Beef Gyoza and green salad. Assorted Sushi, California Rolls, Beef Gyoza and green salad. Assorted Sushi, California Rolls, Beef Gyoza and green salad. Assorted Sushi, California Rolls, Beef Gyoza and green salad.</p></div>
+      </div>
 </div>
 </body>
 </html>
